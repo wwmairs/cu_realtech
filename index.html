@@ -11,7 +11,7 @@
 
 	<body>
 		<header id="top_bar">
-			<h1>logo</h1>
+			<a id="logo" href="/"><h1>logo</h1></a>
 			<a href="programs"><h2>programs</h2></a>
 			<a href="faculty"><h2>faculty</h2></a>
 			<a href="resources"><h2>resources</h2></a>
@@ -30,48 +30,42 @@
 		<div id="content">
 			<div>
 				<ul id="side_bar">
-					<li><a><h4>Mission</h4></a></li>
-					<li><a><h4>The Field</h4></a></li>
-					<li><a><h4>Needs</h4></a></li>
-					<li><a><h4>Partners &amp; Supporters</h4></a></li>
+					<li><a href="#mission"><h4>Mission</h4></a></li>
+					<li><a href="#field"><h4>The Field</h4></a></li>
+					<li><a href="#needs"><h4>Needs</h4></a></li>
+					<li><a href="#partners"><h4>Partners &amp; Supporters</h4></a></li>
 				</ul>
 			</div>
-			<div class="content_block">
-				<p>Our Mission
-					 
-					 “Our mission is to prepare students to add
-					 immediate and long-term value to the real estate
-					 sector by teaching “where the industry is
-					 headed”, with a particular emphasis on
-					 identifying the roles of, and opportunities from,
-					 advances in all forms of technology.”
-					 
-					 The CU Real Estate Center of the Leeds
-					 School of Business aspires to be the
-					 nation’s leading center of education,
-					 knowledge and engagement for the real
-					 estate profession.Real estate, as a factor of
-					 production and a major financial investment
-					 asset, is one of the sectors most impacted
-					 by technology. In spite of this, real estate
-					 has been one of the slowest business
-					 sectors and areas of professional study to
-					 get their arms and heads around these
-					 changes.
-					 
-					 The powerful connections between the
-					 academic and business communities, which
-					 define the CU Real Estate Center, position
-					 the Leeds School of Business to quickly
-					 and dynamically embrace the opportunities
-					 from studying the interrelated relationships
-					 between technological change and real
-					 estate while simultaneously tackling the
-					 challenges arising from this accelerating
-					 evolution.
-				</p>
+			<div class="content_pane">
+				<a name="mission"></a>
+				<h3>mission</h3>
+			</div>
+			<div class="content_pane">
+				<a name="field"></a>
+				<h3>field</h3>
+			</div>
+			<div class="content_pane">
+				<a name="needs"></a>
+				<h3>needs</h3>
+			</div>
+			<div class="content_pane">
+				<a name="partners"></a>
+				<h3>partners</h3>
 			</div>
 		</div>
 	</body>
+
+	<script>
+		var prevScrollpos = window.pageYOffset;
+		window.onscroll = function() {
+		  var currentScrollPos = window.pageYOffset;
+		  if (prevScrollpos > currentScrollPos) {
+		    document.getElementById("top_bar").style.top = "0";
+		  } else {
+		    document.getElementById("top_bar").style.top = "-100px";
+		  }
+		  prevScrollpos = currentScrollPos;
+		}	
+	</script>
 
 </html
