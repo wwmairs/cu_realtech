@@ -10,14 +10,7 @@
 	</head>
 
 	<body>
-		<header id="top_bar">
-			<a id="logo" href="/"><h1>logo</h1></a>
-			<a href="programs"><h2>programs</h2></a>
-			<a href="faculty"><h2>faculty</h2></a>
-			<a href="resources"><h2>resources</h2></a>
-		</header>
-
-		<div class="full_pane">
+		<div class="full_pane one">
 			<div class="v_centered">
 				<h1 class="header">
 					CU Boulder Real Estate &amp; Technology
@@ -27,45 +20,32 @@
 				</h3>
 			</div>
 		</div>
-		<div id="content">
-			<div>
-				<ul id="side_bar">
-					<li><a href="#mission"><h4>Mission</h4></a></li>
-					<li><a href="#field"><h4>The Field</h4></a></li>
-					<li><a href="#needs"><h4>Needs</h4></a></li>
-					<li><a href="#partners"><h4>Partners &amp; Supporters</h4></a></li>
-				</ul>
-			</div>
-			<div class="content_pane">
-				<a name="mission"></a>
-				<h3>mission</h3>
-			</div>
-			<div class="content_pane">
-				<a name="field"></a>
-				<h3>field</h3>
-			</div>
-			<div class="content_pane">
-				<a name="needs"></a>
-				<h3>needs</h3>
-			</div>
-			<div class="content_pane">
-				<a name="partners"></a>
-				<h3>partners</h3>
+		<div class="full_pane two">
+			<div class="v_centered">
+				<h1 class="header">
+					Some kinda other text
+				</h1>
+				<h3 class="sub_header">
+					maybe some paragraphs
+				</h3>
 			</div>
 		</div>
+		<div class="full_pane three">
+			<div class="v_centered">
+				<h1 class="header">
+					a third group of information
+				</h1>
+				<h3 class="sub_header">
+					and some different paragraphs
+				</h3>
+			</div>
+		</div>
+
+		<script src="vendor/polyfill.js"></script>
+    <script src="vendor/scrollsnap-polyfill.js"></script>
 	</body>
 
 	<script>
-		var prevScrollpos = window.pageYOffset;
-		window.onscroll = function() {
-		  var currentScrollPos = window.pageYOffset;
-		  if (prevScrollpos > currentScrollPos) {
-		    document.getElementById("top_bar").style.top = "0";
-		  } else {
-		    document.getElementById("top_bar").style.top = "-100px";
-		  }
-		  prevScrollpos = currentScrollPos;
-		}	
 	</script>
 
 </html
