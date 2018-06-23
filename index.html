@@ -7,6 +7,9 @@
 		<title>Real Estate &amp; Technology</title>
 	
 		<link href="style.css?v=0.0.1" rel="stylesheet"/>
+		<script src="vendor/jquery-3.3.1.min.js"></script>
+		<script src="vendor/polyfill.js"></script>
+    <script src="vendor/scrollsnap-polyfill.js"></script>
 	</head>
 
 	<body>
@@ -20,10 +23,12 @@
 						*A nice little one liner*
 					</h3>
 				</div>
-				<a id="learn_more" onclick="{document.querySelector('.two').scrollIntoView({block:'start', inline:'nearest', behavior:'smooth'});}">learn more</a>
+				<button id="learn_more" onclick="$('html, body').animate({scrollTop: $('.two').offset().top}, 500, 'swing');">
+					<span>learn more</span>
+					<span id="down"></span>
+				</button>
 			</div>
 			<div class="full_pane two">
-				<a id="two" name="two"></a>
 				<div class="v_centered">
 					<h1 class="header">
 						Some kinda other text
@@ -45,11 +50,10 @@
 			</div>
 		</div>
 
-		<script src="vendor/polyfill.js"></script>
-    <script src="vendor/scrollsnap-polyfill.js"></script>
 	</body>
 
 	<script>
+
 	</script>
 
 </html
