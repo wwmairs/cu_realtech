@@ -17,13 +17,15 @@
 	<body>
 		<div class="scroller">
 			<div class="full_pane one">
-				<div class="v_centered">
-					<h1 class="header">
-						CU Boulder Real Estate &amp; Technology
-					</h1>
-					<h3 class="sub_header">
-						*A nice little one liner*
-					</h3>
+				<div class="header">
+					<img class="logo" src="res/logo.png">
+					<a class="pagelink" onclick="$('html, body').animate({scrollTop: $('.two').offset().top}, 500, 'swing');"><h3 class="pagelink-text centered">Overview</h3></a>
+					<a class="pagelink" onclick="$('html, body').animate({scrollTop: $('.three').offset().top}, 500, 'swing');"><h3 class="pagelink-text centered">The Course</h3></a>
+					<a class="pagelink" onclick="$('html, body').animate({scrollTop: $('.four').offset().top}, 500, 'swing');"><h3 class="pagelink-text centered">Scholar-In-Residence</h3></a>
+				</div>
+				<div class="landing_text">
+					<h1>Real Estate &amp; Technology</h1>
+					<h2>University of Colorado <span class="boulder">Boulder</span></h2>
 				</div>
 				<button id="learn_more" onclick="$('html, body').animate({scrollTop: $('.two').offset().top}, 500, 'swing');">
 					<span>learn more</span>
@@ -32,20 +34,30 @@
 			</div>
 			<div class="full_pane two">
 				<div class="v_centered">
-					<h1 class="header">
+					<h1>
 						Some kinda other text
 					</h1>
-					<h3 class="sub_header">
+					<h3>
 						maybe some paragraphs
 					</h3>
 				</div>
 			</div>
 			<div class="full_pane three">
 				<div class="v_centered">
-					<h1 class="header">
+					<h1>
 						a third group of information
 					</h1>
-					<h3 class="sub_header">
+					<h3>
+						and some different paragraphs
+					</h3>
+				</div>
+			</div>
+			<div class="full_pane four">
+				<div class="v_centered">
+					<h1>
+						a third group of information
+					</h1>
+					<h3>
 						and some different paragraphs
 					</h3>
 				</div>
