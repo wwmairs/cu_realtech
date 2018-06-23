@@ -48,6 +48,7 @@ body {
 
 .four {
 	background-color: var(--lightblue);
+	color: white;
 }
 
 .logo {
@@ -161,6 +162,41 @@ body {
 	top: 50%;
 	transform: translateY(-50%);
 }
+
+.page-header {
+	font-weight: bold;
+	font-size: 5.5vw;
+}
+
+.page-subheader {
+	font-style: italic;
+	font-size: 4.5vw;
+}
+
+.page-link {
+	background-color: var(--red);
+	border: 1px solid var(--red);
+	border-radius: 5px;
+	display: inline-block;
+}
+
+.page-link h3 {
+	display: inline-block;
+	text-transform: uppercase;
+	margin: 5px;
+}
+
+hr {
+	margin: 0px;
+	border: none;
+	border-top: 10px solid var(--red);
+}
+
+.container-fluid {
+	padding-left: 30px;
+	padding-right: 30px
+}
+
 
 /* this handles scrollsnap
 .scroller {
