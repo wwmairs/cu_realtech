@@ -69,6 +69,10 @@ body {
 	color: white;
 }
 
+.pagelink:hover h3{
+	color: var(--red);
+}
+
 .header {
 	/* something needs to happen for mobile! */
 	display: grid;
