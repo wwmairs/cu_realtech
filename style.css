@@ -1,8 +1,12 @@
 :root {
-	--bg-color: white;
 	--text-color: black;
 	--highlight-color: grey;
 	--hover-color: blue;
+	--gold: #cfb87c;
+	--tan: #e4e0d6;
+	--darkblue: #0d6a90;
+	--lightblue: #518d99;
+	--red: #d88c7c;
 }
 
 body {
@@ -11,22 +15,45 @@ body {
 	font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue";
 }
 
+.full_pane {
+	position: relative;
+	height: 200vh;
+	width: 100vw;
+}
+
+/* bootstrap sm and up */
+@media (min-width: 768px) { 
+	.full_pane {
+		height: 100vh;
+	}
+}
+
 .one {
+	height: 100vh;
+	background-image: url(res/leeds.jpg); 
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 .two {
-	background-color: #f2f2f2;
+	background-color: var(--darkblue);
 }
 
 .three {
-	background-color: #a2a2a2;
+	background-color: var(--tan);
+}
+
+.four {
+	background-color: var(--lightblue);
 }
 
 #learn_more {
 	outline: none;
-	appearance: none;
-	-webkit-appearance: none;
-	-moz-appearance: none;
+	background: none;
 	border: none;
 	color: var(--highlight-color);
 	position: absolute;
@@ -79,12 +106,7 @@ body {
 }
 */
 
-.full_pane {
-	position: relative;
-	height: 100vh;
-	width: 100vw;
-	/*scroll-snap-align: start;*/
-}
+
 
 .centered {
 	position: absolute;
@@ -99,7 +121,6 @@ body {
 	top: 50%;
 	transform: translateY(-50%);
 }
-
 
 .header {
 	width: 100vw;
