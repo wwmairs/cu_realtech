@@ -4,6 +4,7 @@
 	--darkblue: #0d6a90;
 	--lightblue: #518d99;
 	--red: #d88c7c;
+	--highlight-red: #e7bab0;
 }
 
 body {
@@ -184,30 +185,15 @@ body {
 
 .pageLink {
 	background-color: var(--red);
-	border: 1px solid var(--red);
 	border-radius: 7px;
 	display: inline-block;
 	position: relative;
-	box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.4);
+	transition: background-color 0.3s ease-in-out;
 }
 
-.pageLink::after {
-	content: '';
-	position: absolute;
-	z-index: -1;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	border-radius: 7px;
-	box-shadow: 3px 3px 15px 1px rgba(0, 0, 0, 0.3);
-	opacity: 0;
-	transition: opacity 0.3s ease-in-out;
-}
-
-.pageLink:hover::after {
-	opacity: 1;
-}
+.pageLink:hover {
+	background-color: var(--highlight-red);
+}	
 
 .centered_link {
 	margin: auto;
