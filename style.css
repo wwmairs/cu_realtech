@@ -164,7 +164,7 @@ body {
 
 .pageHeader {
 	font-weight: bold;
-	font-size: 5.3vw;
+	font-size: 5vw;
 	margin-bottom: 10px;
 }
 
@@ -186,20 +186,25 @@ body {
 	border: 1px solid var(--red);
 	border-radius: 7px;
 	display: inline-block;
-	padding: 2px;
+}
+
+.centered_link {
+	margin: auto;
+	display: block;
 }
 
 .pageLink h3 {
 	color: white;
 	display: inline-block;
 	text-transform: uppercase;
-	margin: 5px;
+	margin: 0px;
+	padding: 5px;
 	font-size: 1.5rem;
 }
 
 hr {
 	margin: 0px;
-	margin-bottom: 1rem;
+	margin-bottom: 2rem;
 	border: none;
 	border-top: 10px solid var(--red);
 }
@@ -207,18 +212,20 @@ hr {
 .bullets{
 	display: inline-block;
 	list-style-type: none;
-	font-size: 1.3rem;
+	font-size: 1.5rem;
 	font-weight: bold;
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
 }
 
 .bullets li::before {
 	content: '\200B + ';
 	color: var(--red);
-	font-size: 1.5rem;
+	font-size: 1.6rem;
 }
 
 .centered_bullets {
-	padding: 0;
+	padding-left: 0;
 	margin: auto;
 }
 
