@@ -71,7 +71,7 @@ body {
 }
 
 .pagelink:hover h3{
-	color: var(--red);
+	color: var(--gold);
 }
 
 .header {
@@ -82,11 +82,12 @@ body {
 
 .landing_text {
 	position: absolute;
-	top: 30%;
+	top: 35%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	width: 90vw;
-	padding: 5px;
+	padding-right: 5px;
+	padding-left: 5px;
 	/* this color is var(--red); */
 	background: rgba(216,140,124,.9);
 }
@@ -142,11 +143,11 @@ body {
 }
 
 #learn_more:hover {
-	color: var(--red);
+	color: var(--gold);
 }
 
 #learn_more:hover #down {
-	border-color: var(--red);
+	border-color: var(--gold);
 }
 
 .centered {
@@ -163,7 +164,7 @@ body {
 	transform: translateY(-50%);
 }
 
-.page-header {
+.pageHeader {
 	font-weight: bold;
 	font-size: 5.5vw;
 }
@@ -173,17 +174,19 @@ body {
 	font-size: 4.5vw;
 }
 
-.page-link {
+.pageLink {
 	background-color: var(--red);
 	border: 1px solid var(--red);
 	border-radius: 5px;
 	display: inline-block;
+	padding: 2px;
 }
 
-.page-link h3 {
+.pageLink h3 {
 	display: inline-block;
 	text-transform: uppercase;
 	margin: 5px;
+	font-size: 1.5rem;
 }
 
 hr {
