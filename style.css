@@ -1,7 +1,4 @@
 :root {
-	--text-color: black;
-	--highlight-color: grey;
-	--hover-color: blue;
 	--gold: #cfb87c;
 	--tan: #e4e0d6;
 	--darkblue: #0d6a90;
@@ -58,20 +55,20 @@ body {
 	margin: 15px;
 }
 
-.pagelink {
+.menu-link {
 	position: relative;
 	text-align: center;
 }
 
-.pagelink-text {
+.menu-link-text {
 	width: 100%;
 	margin: 0;
-	font-size: 1.3rem;
+	font-size: 1.2rem;
 	text-transform: uppercase;
 	color: white;
 }
 
-.pagelink:hover h3{
+.menu-link:hover h3{
 	color: var(--gold);
 }
 
@@ -167,8 +164,12 @@ body {
 
 .pageHeader {
 	font-weight: bold;
-	font-size: 5.5vw;
-	margin-bottom: 0px;
+	font-size: 5.3vw;
+	margin-bottom: 10px;
+}
+
+.three .pageHeader {
+	color: var(--darkblue);
 }
 
 .pageHeader:not(.mikedp) {
@@ -201,6 +202,24 @@ hr {
 	margin-bottom: 1rem;
 	border: none;
 	border-top: 10px solid var(--red);
+}
+
+.bullets{
+	display: inline-block;
+	list-style-type: none;
+	font-size: 1.3rem;
+	font-weight: bold;
+}
+
+.bullets li::before {
+	content: '\200B + ';
+	color: var(--red);
+	font-size: 1.5rem;
+}
+
+.centered_bullets {
+	padding: 0;
+	margin: auto;
 }
 
 .container-fluid {
