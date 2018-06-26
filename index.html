@@ -20,7 +20,18 @@
 				<div class="header">
 					<img class="logo" src="res/logo.png">
 					<div class="menu-button">
-						<span>test</span>
+						<div class="menu-icon v_centered">
+							<div></div>
+							<div></div>
+							<div></div>
+						</div>
+					</div>
+					<div class="mobile-menu">
+						<nav>
+							<a onclick="$('html, body').animate({scrollTop: $('.two').offset().top}, 500, 'swing');"><h3>Overview</h3></a>
+							<a onclick="$('html, body').animate({scrollTop: $('.three').offset().top}, 500, 'swing');"><h3>The Course</h3></a>
+							<a onclick="$('html, body').animate({scrollTop: $('.four').offset().top}, 500, 'swing');"><h3>Scholar-In-Residence</h3></a>
+						</nav>
 					</div>
 					<a class="menu-link" onclick="$('html, body').animate({scrollTop: $('.two').offset().top}, 500, 'swing');"><h3 class="menu-link-text centered">Overview</h3></a>
 					<a class="menu-link" onclick="$('html, body').animate({scrollTop: $('.three').offset().top}, 500, 'swing');"><h3 class="menu-link-text centered">The Course</h3></a>
@@ -128,7 +139,10 @@
 		// center link on page 3
 		$(".centered_link").innerWidth($(".link_target").outerWidth());
 		
-
+		// set up menu button
+		$(".menu-button").click(() => {
+			$(".mobile-menu").toggleClass("active");
+		});
 	</script>
 
 </html
