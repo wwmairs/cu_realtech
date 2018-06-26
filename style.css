@@ -1,10 +1,15 @@
 :root {
 	--gold: #cfb87c;
-	--tan: #e4e0d6;
-	--darkblue: #0d6a90;
-	--lightblue: #518d99;
-	--red: #d88c7c;
-	--highlight-red: #e7bab0;
+	/* darkblue */
+	--one: #0d6a90;
+	/* tan */
+	--two: #e4e0d6;
+	/* lightblue */
+	--three: #518d99;
+	/* red */
+	--emph: #d88c7c;
+	/* red tint */
+	--light-emph: #e7bab0;
 }
 
 body {
@@ -18,47 +23,22 @@ body {
 	width: 100vw;
 }
 
-/* bootstrap sm and up */
-@media (min-width: 768px) { 
-	.full_pane {
-		height: 100vh;
-	}
-}
-
-.one {
-	height: 100vh;
-	background-image: url(res/leeds.jpg); 
-	background-position: center center;
-	background-repeat: no-repeat;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
-
-.two {
-	background-color: var(--darkblue);
-	color: white;
-}
-
-.three {
-	background-color: var(--tan);
-}
-
-.four {
-	background-color: var(--lightblue);
-	color: white;
-}
-
 .logo {
 	max-height: 50px;
 	width: auto;
 	margin: 15px;
 }
 
+.menu-button {
+}
+
+.mobile-menu {
+}
+
 .menu-link {
 	position: relative;
 	text-align: center;
+	display: none;
 }
 
 .menu-link-text {
@@ -76,8 +56,53 @@ body {
 .header {
 	/* something needs to happen for mobile! */
 	display: grid;
-	grid-template-columns: 5fr 4fr 4fr 4fr;
+	grid-template-columns: 1fr 1fr;
 }
+
+/* bootstrap sm and up */
+@media (min-width: 768px) { 
+	.full_pane {
+		height: 100vh;
+	}
+
+	.header {
+		grid-template-columns: 5fr 4fr 4fr 4fr;
+	}
+
+	.menu-button {
+		display: none;
+	}
+
+	.menu-link {
+		display: block;
+	}
+}
+
+.one {
+	height: 100vh;
+	background-image: url(res/leeds.jpg); 
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.two {
+	background-color: var(--one);
+	color: white;
+}
+
+.three {
+	background-color: var(--two);
+}
+
+.four {
+	background-color: var(--three);
+	color: white;
+}
+
 
 .landing_text {
 	position: absolute;
@@ -87,7 +112,7 @@ body {
 	width: 90vw;
 	padding-right: 5px;
 	padding-left: 5px;
-	/* this color is var(--red); */
+	/* this color is var(--emph); */
 	background: rgba(216,140,124,.9);
 }
 
@@ -170,7 +195,7 @@ body {
 }
 
 .three .pageHeader {
-	color: var(--darkblue);
+	color: var(--one);
 }
 
 .pageHeader:not(.mikedp) {
@@ -184,7 +209,7 @@ body {
 }
 
 .pageLink {
-	background-color: var(--red);
+	background-color: var(--emph);
 	border-radius: 7px;
 	display: inline-block;
 	position: relative;
@@ -192,7 +217,7 @@ body {
 }
 
 .pageLink:hover {
-	background-color: var(--highlight-red);
+	background-color: var(--light-emph);
 }	
 
 .centered_link {
@@ -213,7 +238,7 @@ hr {
 	margin: 0px;
 	margin-bottom: 2rem;
 	border: none;
-	border-top: 10px solid var(--red);
+	border-top: 10px solid var(--emph);
 }
 
 .bullets{
@@ -227,7 +252,7 @@ hr {
 
 .bullets li::before {
 	content: '\200B + ';
-	color: var(--red);
+	color: var(--emph);
 	font-size: 1.6rem;
 }
 
