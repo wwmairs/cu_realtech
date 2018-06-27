@@ -48,6 +48,10 @@ body {
 	grid-template-columns: 1fr 1fr;
 }
 
+.svg {
+	display: none;
+}
+
 /* bootstrap sm and up */
 @media (min-width: 768px) { 
 	.full_pane {
@@ -60,6 +64,13 @@ body {
 
 	.menu-link {
 		display: block;
+	}
+	.svg {
+		display: block;
+		position: absolute;
+		transform: translate(-50%,-60px);
+		left: 50%;
+		width: 80%;
 	}
 }
 
@@ -253,8 +264,11 @@ p {
 	text-indent: 2rem;
 }
 
-img:not(.logo) {
-	padding-top: 30px;
-	padding-bottom: 30px;
+.leeds-icon {
+	width: 13%;
+	min-width: 100px;
+	position: absolute;
+	padding-left: 30px;
+	transform: translateY(-50%);
 }
 
