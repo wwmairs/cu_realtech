@@ -4,9 +4,7 @@
 	--two: #698595;
 	--three: #77b2c7;
 	--emph: #b56969;
-	/* need to do this one !!
-	--light-emph: #e7bab0;
-	*/
+	--light-emph: #d2a5a5;
 }
 
 body {
@@ -83,6 +81,7 @@ body {
 
 .three {
 	background-color: var(--two);
+	color: white;
 }
 
 .four {
@@ -181,9 +180,6 @@ body {
 	margin: 0;
 }
 
-.three .pageHeader {
-	color: var(--one);
-}
 
 .pageHeader:not(.mikedp) {
 	margin-bottom: 10px;
