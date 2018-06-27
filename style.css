@@ -1,15 +1,12 @@
 :root {
 	--gold: #cfb87c;
-	/* darkblue */
-	--one: #0d6a90;
-	/* tan */
-	--two: #e4e0d6;
-	/* lightblue */
-	--three: #518d99;
-	/* red */
-	--emph: #d88c7c;
-	/* red tint */
+	--one: #3f668c;
+	--two: #698595;
+	--three: #77b2c7;
+	--emph: #b56969;
+	/* need to do this one !!
 	--light-emph: #e7bab0;
+	*/
 }
 
 body {
@@ -103,7 +100,7 @@ body {
 	padding-right: 5px;
 	padding-left: 5px;
 	/* this color is var(--emph); */
-	background: rgba(216,140,124,.9);
+	background: rgba(181,105,105,.9);
 }
 
 .landing_text h1 {
